@@ -30,25 +30,41 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epT-sl-dhq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duW-63-CpX">
-                                <rect key="frame" x="144" y="132" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Text"/>
-                                <connections>
-                                    <action selector="changetext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sSE-Pp-v6p"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-7Q-ytp">
+                                <rect key="frame" x="137.5" y="121" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="X86-Bh-5PK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnK-Yc-Chj">
+                                <rect key="frame" x="137.5" y="161" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QME-J7-Hdu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="o07-3F-ory" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="1YU-Y3-nDg"/>
+                            <constraint firstItem="6gF-7Q-ytp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CSM-Ne-dzp"/>
+                            <constraint firstItem="rnK-Yc-Chj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cvu-Dq-Dg1"/>
+                            <constraint firstItem="6gF-7Q-ytp" firstAttribute="top" secondItem="TVP-ld-Na8" secondAttribute="bottom" constant="10" id="EAH-2D-5O9"/>
                             <constraint firstItem="o07-3F-ory" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QNP-G2-2a0"/>
                             <constraint firstItem="TVP-ld-Na8" firstAttribute="top" secondItem="o07-3F-ory" secondAttribute="bottom" constant="10" id="p4H-Zw-OMT"/>
                             <constraint firstItem="TVP-ld-Na8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rQK-kC-X1I"/>
+                            <constraint firstItem="rnK-Yc-Chj" firstAttribute="top" secondItem="6gF-7Q-ytp" secondAttribute="bottom" constant="10" id="zZM-Aq-AYp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="6gF-7Q-ytp" id="qeV-6S-eH0"/>
+                        <outlet property="Text2" destination="rnK-Yc-Chj" id="tQZ-Wz-mUx"/>
                         <outlet property="label" destination="o07-3F-ory" id="CUs-ky-di7"/>
                     </connections>
                 </viewController>
